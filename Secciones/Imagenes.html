@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First time</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        *{
+            margin: 0pt;
+            padding: 0pt;
+        }
+        body{
+            background-color: orange;
+        }
+        menu{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+    } 
+    nav li{
+    display:inline-block;
+    width:10%;
+    padding:5px 10px;
+    background-color: white;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
+    }
+    nav li:hover{
+    background-color:#fff;
+    color:#000;
+    }
+    h1{
+    color: white;
+    font-size: 55px;
+    background-color: orange;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 5px;
+    width: auto;
+    height: 80px;
+    flex: 80%;
+    }
+    .contenedor_grid{
+        margin: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px 450px 450px;
+        gap: 30px;
+        width: 500px;
+    }
+    .item{
+        background-color: red;
+        border: 3px solid #000;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 30px;
+        width: 460px;
+    }
+    .item1{
+        background-size: cover;
+        background-image: url("../imagenes/castillo.jpg");
+    }
+    .item2{
+        background-size: cover;
+        background-image: url("../imagenes/flores.jpg");
+    }
+    .item3{
+        background-size: cover;
+        background-image: url("../imagenes/frutas.jpg");
+    }
+    .item4{
+        background-size: cover;
+        background-image: url("../imagenes/tree.jpg");
+    }
+    .item5{
+        background-size: cover;
+        background-image: url("../imagenes/waterfall.jpg");
+    }
+    .item6{
+        background-size: cover;
+        background-image: url("../imagenes/ice.jpg");
+    }
+    @media (max-width:990px){ 
+        .contenedor_grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 450px 450px 450px 450px 450px ;
+        gap: 20px;
+        }
+        .item{
+        background-size: cover;
+        width: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header class="hed">
+        <h1>Imagenes</h1>
+    </header>
+
+    <div class="imagen_de_fondo2">
+    <nav>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+            <li><a href="#">Imagenes</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="Producto.html">Producto</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="contenedor_grid">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        <div class="item item6"></div>
+    </div>
+
+</body>
+
+</html>

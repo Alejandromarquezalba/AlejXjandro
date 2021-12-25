@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First time</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="link rel="preconnect href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+                *{
+            margin: 0px;
+            padding: 0pt;
+        }
+        body{
+            background-color: #F9CB9C;
+        }
+        menu{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+    } 
+    nav li{
+    display:inline-block;
+    width:10%;
+    padding:5px 10px;
+    background-color: white;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
+    }
+    nav li:hover{
+    background-color:#fff;
+    color:#000;
+}
+.titulo_contacto{
+    margin: 0px;
+    font-family: 'Gwendolyn', cursive;
+    color: white;
+    font-size: 65px;
+    background-color: orange;
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 5px;
+    width: auto;
+    height: 80px;
+    flex: 80%;
+}
+.contacto_contenido{
+    font-family: cursive;
+}
+.hed{
+        display: flex;
+    }
+    .img_logo{
+        background-color: orange;
+        padding-left: 25px;
+        padding-top: 15px;
+    }
+    </style>
+</head>
+<body>
+    <header class="hed">
+        <label class="img_logo"> 
+            <img src="/imagenes/logo.png"></a>
+        </label>
+        <h1 class="titulo_contacto">Contacto</h1>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#.html">Contacto</a></li>
+            <li><a href="Imagenes.html">Imagenes</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="Producto.html">Producto</a></li>
+        </ul>
+    </nav>
+    <p class="contacto_contenido">
+        CONTACTO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste voluptatibus repellat vitae. Aliquid dolor itaque autem deserunt minima illum magnam! Distinctio ipsa natus accusamus minima quisquam beatae dicta reprehenderit eaque maxime debitis ut velit provident, iusto qui maiores molestias laudantium, possimus nesciunt dolorem excepturi. Magni ea autem vel perferendis animi tempora error ad est dignissimos in ipsa id eaque nobis iste inventore fugiat labore illum, laboriosam mollitia alias quam. Accusantium eius ipsam laborum ab illum iste facere corrupti laboriosam! Dolores, molestiae saepe. Quibusdam laboriosam, id cupiditate, eum porro, magnam explicabo repellendus suscipit inventore quos amet? Atque illo nobis laboriosam consequuntur impedit odit, modi officiis consectetur distinctio aspernatur debitis voluptates porro. Dolore tenetur pariatur labore explicabo. Laboriosam, hic? Tempora hic laboriosam dolores perferendis? Expedita, molestiae tenetur debitis nostrum corporis quia enim accusamus impedit explicabo error qui aut voluptatum. Veritatis, non saepe? Vero ipsam ratione explicabo suscipit consequatur quis praesentium sapiente ipsa?
+    </p>
+    <ol>
+        <li>Ejemplo 1 de lista ordenada</li>
+        <li>Ejemplo 2 de lista ordenada</li>
+        <li>Ejemplo 3 de lista ordenada</li>
+    </ol>
+    <ul type=square>
+        <li>Ejemplo 1 de estilo de lista deordenada (cuadrado)</li>
+        <li>Ejemplo 2 de estilo de lista deordenada (cuadrado)</li>
+        <li>Ejemplo 3 de estilo de lista deordenada (cuadrado)</li>
+    </ul>
+    <ul type=circle>
+        <li>Ejemplo 1 de estilo de lista deordenada (circulo)</li>
+        <li>Ejemplo 2 de estilo de lista deordenada (circulo)</li>
+        <li>Ejemplo 3 de estilo de lista deordenada (circulo)</li>
+    </ul>
+
+
+    <h3>No tienes cuenta?<br>
+        Registrate
+    </h3>
+<form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+Nombre<input type="text" required> <br>
+Apellido<input type="text" required> <br>
+Contraseña<input type="password" required> <br>
+Email<input type="email" required> <br>
+Fecha de nacimiento<input type="date" required> <br>
+Telefono<input type="text"> <br>
+<input type="submit" value="Enviar información">
+<input type="reset" value="Borrar información">
+
+<h2>Elige tu genero</h2>
+<label for="sexo">Hombre</label>
+<input type="radio" name="sexo" value="hombre" checked> <br>
+<label for="sexo">Mujer</label>
+<input type="radio" name="sexo" value="mujer" checked> <br>
+
+</body>
+</html>
