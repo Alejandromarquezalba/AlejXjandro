@@ -66,6 +66,87 @@
     height: 80px;
     flex: 80%;
     }
+    .contenedor_grid{
+        margin: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 150px 150px 150px 150px;
+        gap: 20px;
+
+    }
+    .caja{
+        background-color: red;
+        border: 3px solid #000;
+        text-align: center;
+        font-size: 10px;
+        width: 150px;
+    }
+    .c1{
+        background-color: darkred;
+        transform: translate(70px);
+    }
+    .c2{
+        background-color: blue;
+        transform: rotate(20deg);
+    }
+    .c3{
+        background-color: pink;
+        transform: rotateX(65deg);
+    }
+    .c4{
+        background-color: darkorchid;
+        transform: rotateY(40deg);
+    }
+    .c5{
+        background-color: orange;
+        transform: rotateZ(30deg);
+    }
+    .c6{
+        background-color: yellow;
+        transform: scale(0.6);
+    }
+    .c7{
+        background-color: green;
+        transform: skewX(20deg);
+    }
+    .c8{
+        background-color: red;
+        transform: skewY(30deg);
+    }
+    .c9{
+        background-color: aqua;
+        transform: skew(40deg, 20deg);
+    }
+    .c10{
+        background-color: white;
+    }
+    .c11{
+        background-color: rebeccapurple;
+    }
+    .animation{
+        width: 200px;
+        height: 200px;
+        background-color: seagreen;
+        animation-name: efecto;
+
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 5s;
+    }
+
+    @keyframes efecto {
+        0% {
+            width: 100px;
+        }
+        10% {
+            background-color: yellow;
+        }
+        100% {
+            width: 800px;
+            background-color: red;
+        }
+    }
+
     </style>
 </head>
 <body>
@@ -103,63 +184,24 @@
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at, dolore repellat quibusdam porro dicta perspiciatis numquam neque adipisci molestiae! Porro, similique error, natus facilis illum adipisci saepe reiciendis atque quas fuga ex nihil sunt non veniam nesciunt minus nemo officiis at blanditiis velit, unde incidunt! Placeat nam earum quia sequi voluptatum exercitationem! Quia, quos earum? Dolores incidunt consequatur quasi illum ex! Exercitationem ratione consequuntur distinctio vel. Ullam, explicabo doloremque consequuntur quasi cum, voluptas quaerat vero aliquid odio quidem exercitationem enim pariatur excepturi natus ipsum laborum vitae harum expedita officiis aut. Dolor eveniet ratione rerum nisi et laborum, illo cumque.
 </p>
 
-    <h2>Horarios de atención</h2>
+    <h2>Transmaciones</h2>
 
-    <table border="5">
-        <tr>
-            <th>Horarios</th>
-            <th>Lunes</th>
-            <th>Martes</th>
-            <th>Miercoles</th>
-            <th>Jueves</th>
-            <th>Viernes</th>
-            <th>Sabado</th>
-            <th>Domingo</th>
-        </tr>
-        <tr>
-            <td>Horario1</td>
-            <td>Horario2</td>
-            <td>Horario3</td>
-            <td>Horario4</td>
-            <td>Horario5</td>
-            <td>Horario6</td>
-            <td>Horario7</td>
-            <td>Horario8</td>
-            </td>
-        </tr>
-        <tr>
-            <td>Horario1</td>
-            <td>Horario2</td>
-            <td>Horario3</td>
-            <td>Horario4</td>
-            <td>Horario5</td>
-            <td>Horario6</td>
-            <td>Horario7</td>
-            <td>Horario8</td>
-        </tr>
-        <tr>
-            <td>Horario1</td>
-            <td>Horario2</td>
-            <td>Horario3</td>
-            <td>Horario4</td>
-            <td>Horario5</td>
-            <td>Horario6</td>
-            <td>Horario7</td>
-            <td>Horario8</td>
-        </tr>
-        <tr>
-            <td>Horario1</td>
-            <td>Horario2</td>
-            <td>Horario3</td>
-            <td>Horario4</td>
-            <td>Horario5</td>
-            <td>Horario6</td>
-            <td>Horario7</td>
-            <td>Horario8</td>
-        </tr>
-    
-    </table>
+    <div class="contenedor_grid">
+        <div class="Caja c1">Translate</div>
+        <div class="Caja c2">Rotate</div>
+        <div class="Caja c3">Rotate X</div>
+        <div class="Caja c4">Rotate Y</div>
+        <div class="Caja c5">Rotate Z</div>
+        <div class="Caja c6">Scale</div>
+        <div class="Caja c7">SkewX</div>
+        <div class="Caja c8">SkewY</div>
+        <div class="Caja c9">Skew</div>
+        <div class="Caja c10">Perspective rotate2</div>
+        <div class="Caja c11">Matrix</div>
+    </div>
 
+    <section class="animation">Animacion</section>
 
 </body>
+
 </html>
